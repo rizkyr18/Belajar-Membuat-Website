@@ -1,0 +1,118 @@
+*, /* gunakan *, agar padding dan margin html bisa diterapkan ke seluruhnya */
+ html {
+    padding: 0;
+    margin: 0;
+    /* agar tidak ada gep diantara elemen yang ada */
+}
+.container{
+/* vh adalah vertical height yang berguna agar panjangnya berdasarkan device user */
+}
+.container-navbar{
+    background-color: #008B8B;
+    width: 100%; /* lebar */
+    height: 10vh; /* tinggi */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ul-navbar{
+    display: flex; /* untuk menentukan urutan kotaknya */
+    height: 100px; /* tentukan tinggi agar justify berhasil */
+    justify-content: center; /* agar kotak konten berada tepat ditengah */
+    align-items: center; /* agar kotak konten navbar berada di tengah */
+}
+.li-navbar{
+    list-style-type: none; /* penanda item dari list yang dibuat */ 
+    padding: 20px; /* spasi antar konten */
+    margin: 5px; /* memberi longkap antar kotak */
+    color: white; /* warna text white */
+    font-size: 30px;
+}
+.li-navbar:hover{ /* menggunakan hover agar logo mouse ganti ke tangan saat diarahkan ke kotak navbar */
+    background-color: gray;
+    transition: .5s ease-in-out; /* memberikan transisi saat mouse mengarah ke kotak */
+    transition-delay: .3s; /* delay transisi */
+    border-radius: 8px; /* membulatkan siku pada kotak navbar */
+}
+.a-navbar{
+    color: white;
+    font-weight: 800; /* ketebalan font */
+    text-decoration: none; /* agar tidak ada underline pada navbar */ 
+}
+.container-content{
+    background-color: #f7f7f7;
+    background-image: url("pagoda.jpg");
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.a-content{
+    width: 720px;
+    height: 480px;
+    background-color: #008080;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column; /* agar paragraf berada dibawag img */
+    justify-content: center;
+    align-items: center;
+    border-radius: 80px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); /* untuk penggunaan box shadow cari box shadow generator di google lalu copas codingannya */
+                -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.img-content{
+    height: 40vh;
+    border-radius: 50px;
+}
+.container-footer{
+    height: 10vh;
+    background-color: #008B8B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h1-footer{
+    font-size: 40px;
+    color: white;
+}
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 10px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  .btn:hover, .btn:focus {
+    color: #fff;
+    background-color: gray;
+    outline: 0;
+  }
+  .go {
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    transition: all 150ms ease-in-out;
+  }
+  .go:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
